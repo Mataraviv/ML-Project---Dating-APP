@@ -4,7 +4,7 @@
 An Exploratory Data Analysis and Machine Learning Approach
 
 ## Abstract:
-This study aims to develop a predictive model for user engagement on a dating app, quantified by the number of "profile kisses." We utilize a dataset comprising various user attributes, including demographic details, app usage metrics, and user preferences. Through extensive data cleaning, feature engineering, and selection, we create a robust dataset to train multiple machine learning models. The models, including Random Forest, Gradient Boosting, and XGBoost, are evaluated using metrics such as Mean Squared Error (MSE) and Root Mean Squared Log Error (RMSLE).
+This study aims to develop a predictive model for user engagement on a dating app, quantified by the number of "profile kisses." We utilize a dataset comprising various user attributes, including demographic details, app usage metrics, and user preferences. Through extensive data cleaning, feature engineering, and selection, we create a robust dataset to train multiple machine-learning models. The models, including Random Forest, Gradient Boosting, and XGBoost, are evaluated using metrics such as Mean Squared Error (MSE) and Root Mean Squared Log Error (RMSLE).
 
 ## 1. Introduction:
 This study focuses on predicting user engagement on Lovoo, measured by "profile kisses," using a dataset collected through a custom tool. To gather the data, two male profiles were created specifically for this purpose, and the tool collected only female user profiles suggested by Lovoo's recommendation algorithm. 
@@ -36,16 +36,23 @@ An initial exploratory data analysis was conducted to identify patterns, distrib
 4. **Feature Selection**: Feature selection was conducted using multiple models, including Lasso Regression, Random Forest, and Gradient Boosting, to identify the most predictive variables.
 
 Figure 1: Distribution Plots of Numeric Features: 
+![ML-Project---Dating-APP](PIC1.PNG)
 
 Figure 2: Box Plots of Numeric Features to identify Outliers: 
+![ML-Project---Dating-APP](PIC2.PNG)
 
 Figure 3: Features Vs Target Value: 
+![ML-Project---Dating-APP](PIC3.PNG)
 
 Figure 4: Corralation of Featuers and Target Value: 
+![ML-Project---Dating-APP](PIC4.PNG)
 
 Figure 5: Correlation Matrix Heatmap: correlation matrix for all numeric features to highlight relationships and potential multicollinearity.
+![ML-Project---Dating-APP](PIC5.PNG)
 
 Figure 6: Word Cloud of Text Data: word cloud of “freetext” and “whazzup” columns before excluding emojis and after.
+![ML-Project---Dating-APP](PIC8.PNG)
+![ML-Project---Dating-APP](PIC9.PNG)
 
 —------------------------------------------------------------------------------------------
 —----------------------------------------------------
@@ -67,13 +74,18 @@ Multiple models were trained and evaluated, including:
 - XGBoost Regressor
 ### Hyperparameter Tuning: 
 Grid search with cross-validation (GridSearchCV) was employed to fine-tune hyperparameters for Random Forest and XGBoost models, optimizing parameters like the number of trees, maximum depth, and learning rate.
+![ML-Project---Dating-APP](PIC10.PNG)
+
 
 ## 5. Implementation:
 The Random Forest and XGBoost models were identified as top-performing based on their MSE and MAE values.
 - Model Performance Metrics: performance metrics (MSE, RMSE, MAE, RMSLE) for all models on the validation and test sets.
 - Testing on New Data: The models were validated on unseen test data to confirm generalizability.
+  ![ML-Project---Dating-APP](PIC11.PNG)
 - Predicted vs. Actual Values Plot:
  Predictions were plotted against actual values to visually assess performance and ensure robustness.
+![ML-Project---Dating-APP](PIC12.PNG)
+
 
 ## 6. Results:
 ### Model Performance: 
