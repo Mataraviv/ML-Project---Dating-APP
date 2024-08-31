@@ -2,8 +2,6 @@
 An Exploratory Data Analysis and Machine Learning Approach
 ![Studio Availability Checker](./Current%20Logo.png)
 
-
-
 ## Abstract:
 This study aims to develop a predictive model for user engagement on a dating app, quantified by the number of "profile kisses." We utilize a dataset comprising various user attributes, including demographic details, app usage metrics, and user preferences. Through extensive data cleaning, feature engineering, and selection, we create a robust dataset to train multiple machine learning models. The models, including Random Forest, Gradient Boosting, and XGBoost, are evaluated using metrics such as Mean Squared Error (MSE) and Root Mean Squared Log Error (RMSLE).
 
@@ -71,17 +69,17 @@ Grid search with cross-validation (GridSearchCV) was employed to fine-tune hyper
 
 ## 5. Implementation:
 The Random Forest and XGBoost models were identified as top-performing based on their MSE and MAE values.
-Table 3: Model Performance Metrics: Insert a table showing the performance metrics (MSE, RMSE, MAE, RMSLE) for all models on the validation and test sets.
-Testing on New Data: The models were validated on unseen test data to confirm generalizability.
-
+- Model Performance Metrics: performance metrics (MSE, RMSE, MAE, RMSLE) for all models on the validation and test sets.
+- Testing on New Data: The models were validated on unseen test data to confirm generalizability.
+- Predicted vs. Actual Values Plot:
  Predictions were plotted against actual values to visually assess performance and ensure robustness.
-Figure 6: Predicted vs. Actual Values Plot: 
 
 ## 6. Results:
-Key Findings from EDA: Features such as "counts_profileVisits" and "counts_g" were found to be significant predictors of "profile kisses”.
-Model Performance: The Random Forest Regressor achieved the lowest validation error, MSE and RMSE. The XGBoost Regressor also performed well, indicating its suitability for deployment given its balance of accuracy and interpretability.
-Both models did not perform well, and the errors are high. I believe this is due to the poor data quality.
+### Model Performance: 
+The Random Forest Regressor achieved the lowest validation error, MSE and RMSE. The XGBoost Regressor also performed well, indicating its suitability for deployment given its balance of accuracy and interpretability.
 
-## 7. Conclusion:
-This project attempted to develop a predictive model for user engagement in a dating app by identifying key features influencing "profile kisses." However, the results indicate that the models struggled to accurately predict user engagement, likely due to limitations in the dataset and its quality. Neither the Random Forest nor the XGBoost models provided satisfactory performance, suggesting that predicting user popularity using the available data is challenging.
+### Conclusion:
+This project attempted to develop a predictive model for user engagement in a dating app by identifying key features influencing "profile kisses." 
+However, the results indicate that the models struggled to accurately predict user engagement, likely due to limitations in the dataset and its quality. Neither the Random Forest nor the XGBoost models provided satisfactory performance, suggesting that predicting user popularity using the available data is challenging.
+
 Future Directions: Future research could focus on improving data quality, incorporating more diverse data sources, and exploring advanced modeling techniques or feature engineering strategies to enhance prediction accuracy.
