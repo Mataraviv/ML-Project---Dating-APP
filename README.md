@@ -1,38 +1,60 @@
-—------------------------------------------------------------------------------------------
-—----------------------------------------------------
+# Predicting Profile Kisses in a Dating App
+An Exploratory Data Analysis and Machine Learning Approach
+![Studio Availability Checker](./Current%20Logo.png)
 
-Title:
-Predicting Profile Kisses in a Dating App: An Exploratory Data Analysis and Machine Learning Approach
 
-Abstract:
+
+## Abstract:
 This study aims to develop a predictive model for user engagement on a dating app, quantified by the number of "profile kisses." We utilize a dataset comprising various user attributes, including demographic details, app usage metrics, and user preferences. Through extensive data cleaning, feature engineering, and selection, we create a robust dataset to train multiple machine learning models. The models, including Random Forest, Gradient Boosting, and XGBoost, are evaluated using metrics such as Mean Squared Error (MSE) and Root Mean Squared Log Error (RMSLE).
 
-1. Introduction:
+- **Check Availability**: Select a date and time range to see if the studio is available.
+- **Book Studio**: Book the studio by providing your email, booking request, and event description upon availability confirmation.
+- **Upcoming Events**: Displays upcoming events in the studio calendar if it's unavailable for the selected time.
+
+## 1. Introduction:
 This study focuses on predicting user engagement on Lovoo, measured by "profile kisses," using a dataset collected through a custom tool. To gather the data, two male profiles were created specifically for this purpose, and the tool collected only female user profiles suggested by Lovoo's recommendation algorithm. 
 The dataset’s limitation—being confined to profiles recommended for these two male profiles—resulted in a repetitive set of female profiles influenced by factors like location and cookies. Future work should aim to include a broader range of profiles across different genders and age ranges. The goal is to identify the key factors influencing "profile kisses" and develop a predictive model to enhance user engagement and app effectiveness.
 
-2. Domain Knowledge:
-Defining the Questions: The primary question is: What factors influence the number of profile kisses on a dating app? Additional sub-question include identifying the most significant predictors.
+## 2. Domain Knowledge:
+1. Defining the Questions: The primary question is: What factors influence the number of profile kisses on a dating app? Additional sub-question include identifying the most significant predictors.
 Understanding the Problem: The problem involves predicting a numeric outcome (profile kisses) using various user features. We understand that "profile kisses" represent a measure of user engagement on the app, which could be influenced by multiple factors such as user profile completeness, interaction history, and app usage behavior.
-Outcome Definition: The desired outcome is a machine learning model capable of accurately predicting the number of profile kisses, with minimal error, using a set of relevant features.
+2. Outcome Definition: The desired outcome is a machine learning model capable of accurately predicting the number of profile kisses, with minimal error, using a set of relevant features.
 
-3. Project Design:
-Optimal Design Selection: A supervised learning approach was selected to predict the numeric target variable. The regression analysis was chosen based on the continuous nature of the target ("profile kisses").
-Data Handling Strategy: Data handling involved multiple steps:
-Cleaning: Removal of irrelevant columns, conversion of date columns, and text normalization.
-Completing: Addressing missing data using imputation techniques.
-Excluding: Removing duplicates and filtering outliers based on statistical analysis.
-Research Protocol Development: A comprehensive research protocol was developed, including data retrieval, preprocessing steps, feature engineering, model building, evaluation, and hyperparameter tuning.
+1. Clone the repository to your local machine:
+   ```
+   git clone <https://github.com/Mataraviv/Danca-Comigo-Calendar>
+2. Install Python 3.11:
 
-4. Data Preparation:
-Data Extraction: The data was extracted from two Excel files provided by the dating app. These files contained user information such as demographic details, activity metrics, and profile descriptions.
-File Preparation: Data from both files were merged based on common user identifiers. The merging process involved joining on multiple keys to ensure a comprehensive dataset.
-Exploratory Data Analysis (EDA): An initial exploratory data analysis was conducted to identify patterns, distributions, and potential correlations between features and the target variable. Key findings included:
+    You can download Python from [python.org](https://www.python.org/) and follow the installation instructions for your operating system.
 
+3. Install dependencies:
 
+    We recommend using Poetry for managing dependencies. If you don't have Poetry installed, you can install it using the instructions [here](https://python-poetry.org/docs/#installation).
+    There is also a requirements.txt in the Repository
 
+    ```
+    poetry install
+## 3. Project Design:
+### Optimal Design Selection:
+A supervised learning approach was selected to predict the numeric target variable. The regression analysis was chosen based on the continuous nature of the target ("profile kisses").
+### Data Handling Strategy:
+Data handling involved multiple steps:
 
+1. Cleaning: Removal of irrelevant columns, conversion of date columns, and text normalization.
+      
+2. Completing: Addressing missing data using imputation techniques.
+      
+3. Excluding: Removing duplicates and filtering outliers based on statistical analysis.
+### Research Protocol Development:
+A comprehensive research protocol was developed, including data retrieval, preprocessing steps, feature engineering, model building, evaluation, and hyperparameter tuning.
 
+## 4. Data Preparation:
+### Data Extraction:
+The data was extracted from two Excel files provided by the dating app. These files contained user information such as demographic details, activity metrics, and profile descriptions.
+### File Preparation: 
+Data from both files were merged based on common user identifiers. The merging process involved joining on multiple keys to ensure a comprehensive dataset.
+### Exploratory Data Analysis (EDA): 
+An initial exploratory data analysis was conducted to identify patterns, distributions, and potential correlations between features and the target variable. Key findings included:
 
 Figure 1: Distribution Plots of Numeric Features: 
 
@@ -46,6 +68,8 @@ Figure 2: Correlation Matrix Heatmap: correlation matrix for all numeric feature
 
 Figure 3: Word Cloud of Text Data: word cloud of “freetext” and “whazzup” columns before excluding emojis and after.
 
+—------------------------------------------------------------------------------------------
+—----------------------------------------------------
       1.Data Cleaning: Removing duplicates and irrelevant columns.
       
       2.Data Imputation: Missing values were addressed using the KNN imputer, which utilizes the nearest neighbors to estimate missing values based on similarity in feature space.
