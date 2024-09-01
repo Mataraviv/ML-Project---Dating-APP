@@ -1,8 +1,8 @@
 ![ML-Project---Dating-APP](LOVOO_LOGO.PNG)
 
-# Predicting Profile Kisses in a Dating App
+# Predicting Profile Kisses in a Dating App 
 An Exploratory Data Analysis and Machine Learning Approach
-
+![ML-Project---Dating-APP](pic15.PNG)
 ## Abstract:
 This study aims to develop a predictive model for user engagement on a dating app, quantified by the number of "profile kisses." We utilize a dataset comprising various user attributes, including demographic details, app usage metrics, and user preferences. Through extensive data cleaning, feature engineering, and selection, we create a robust dataset to train multiple machine-learning models. The models, including Random Forest, Gradient Boosting, and XGBoost, are evaluated using metrics such as Mean Squared Error (MSE) and Root Mean Squared Log Error (RMSLE).
 
