@@ -32,7 +32,8 @@ An initial exploratory data analysis was conducted to identify patterns, distrib
       - **Flags**: Binary flags indicating the presence of emojis or mentions of Instagram.
       
       - **Other**: Consolidate categories with low counts into 'Other' to reduce cardinality
-      
+      - **Emoji**: ![ML-Project---Dating-APP](PIC13.PNG)
+
 4. **Feature Selection**: Feature selection was conducted using multiple models, including Lasso Regression, Random Forest, and Gradient Boosting, to identify the most predictive variables.
 
 Figure 1: Distribution Plots of Numeric Features: 
