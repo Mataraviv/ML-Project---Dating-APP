@@ -35,7 +35,7 @@ An initial exploratory data analysis was conducted to identify patterns, distrib
       
       - **Other**: Consolidate categories with low counts into 'Other' to reduce cardinality      
 
-4. **Feature Selection**: Feature selection was conducted using multiple models, including Lasso Regression, Random Forest, and Gradient Boosting, to identify the most predictive variables.
+4. **Feature Selection**: Feature selection was conducted using multiple models, including Lasso Regression, Random Forest, and Gradient Boosting, to identify the most predictive variables. 21 columns remaind.
 
 Figure 1: Distribution Plots of Numeric Features: 
 ![ML-Project---Dating-APP](PIC1.PNG)
